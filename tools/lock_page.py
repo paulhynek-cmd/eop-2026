@@ -25,8 +25,8 @@ page = """<!doctype html>
 <meta name="robots" content="noindex,nofollow">
 <title>Cultiva 2026 EOP</title>
 <style>
-:root { --fg: #23271F; --bg: #F6F7F2; --panel: #FFFFFF; --line: #DDE2D4; --blue: #0277AD; --green: #7BA93E; --bad: #B0413E; }
-@media (prefers-color-scheme: dark) { :root { --fg: #ECEFE7; --bg: #121510; --panel: #1C211A; --line: #3A4236; --bad: #E07A76; } }
+:root { color-scheme: dark; --fg: #ECEFE7; --bg: #121510; --panel: #1C211A; --line: #3A4236; --blue: #3FA9DE; --green: #7BA93E; --bad: #E07A76; }
+.box img { background: #FFFFFF; padding: 4px 10px; border-radius: 6px; }
 html, body { margin: 0; background: var(--bg); color: var(--fg); font-family: Arial, Helvetica, sans-serif; }
 .gate { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 16px; box-sizing: border-box; }
 .box { width: 100%; max-width: 380px; background: var(--panel); border: 1px solid var(--line); border-top: 5px solid var(--blue); border-radius: 8px; padding: 28px 24px; box-sizing: border-box; }

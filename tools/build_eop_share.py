@@ -77,12 +77,14 @@ shim = """<script>
   };
 })();
 </script>""".replace('__RAW__', json.dumps(data))
-root = """:root { --cds-chart-grid: #E6EAE1; --cds-dur-slow: .3s; --cds-gap-xs: .25rem; --cds-gap-sm: .5rem; --cds-gap-md: 1rem; --cds-gap-lg: 1.5rem; --cds-pad-xs: .3rem; --cds-pad-sm: .6rem; --cds-pad-lg: 1.1rem; --cds-radius: 6px;
-  --color-bad: #B0413E; --color-border-line: #DDE2D4; --color-fg: #23271F; --color-panel: #FFFFFF; --page-bg: #F6F7F2; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --cds-chart-grid: #2E352B; --color-bad: #E07A76; --color-border-line: #3A4236; --color-fg: #ECEFE7; --color-panel: #1C211A; --page-bg: #121510; } }
-:root[data-theme="dark"] { --cds-chart-grid: #2E352B; --color-bad: #E07A76; --color-border-line: #3A4236; --color-fg: #ECEFE7; --color-panel: #1C211A; --page-bg: #121510; }
+root = """:root { color-scheme: dark; --cds-chart-grid: #2E352B; --cds-dur-slow: .3s; --cds-gap-xs: .25rem; --cds-gap-sm: .5rem; --cds-gap-md: 1rem; --cds-gap-lg: 1.5rem; --cds-pad-xs: .3rem; --cds-pad-sm: .6rem; --cds-pad-lg: 1.1rem; --cds-radius: 6px;
+  --color-bad: #E07A76; --color-border-line: #3A4236; --color-fg: #ECEFE7; --color-panel: #1C211A; --page-bg: #121510; }
 html, body { margin: 0; background: var(--page-bg); }
 .wrap { max-width: 1200px; margin: 0 auto; padding: 24px 16px 48px; }
+.eop .brand img { background: #FFFFFF; padding: 4px 10px; border-radius: 6px; }
+.wrap .eop .pay-chip.expected { color: #6CC3EE; border-color: #6CC3EE; }
+.wrap .eop .hero-value, .wrap .eop .tile-value, .wrap .eop h1, .wrap .eop td.strong, .wrap .eop td.st-committed, .wrap .eop .pay-month-name { color: #4DB3E6; }
+.wrap .eop .pay-month-inv { color: #F2C46B; }
 @media print { .wrap { max-width: none; } .card, .tile { break-inside: avoid; } }
 """
 html = ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n'
